@@ -16,6 +16,7 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  lidOpen: false,
 
   //defining a method to change the name property;
 
@@ -23,15 +24,21 @@ const backpack = {
     this.name = newName
   },
 
-  // Defining the  volume methode to change the volume property
+  // Defining the  volume method to change the volume property
   changeVolume: function(newVolume) {
     this.volume = newVolume;
   },
-
+   
   changeColor: function(newColor) {
     this.color = newColor;
   },
   
+  //defining a method to change the Pocket Num property;
+  
+  changePocketNum: function(newPocketNum) {
+    this.pocketNum = newPocketNum;
+  },
+
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -52,3 +59,16 @@ console.log("Old Volume is:", backpack.volume);
 console.log("Old color is:", backpack.color);
 backpack.changeColor('Pink');
 console.log("New color is:", backpack.color);
+
+console.log("Old pocketNum is:", backpack.pocketNum);
+backpack.changePocketNum("A lot");
+console.log("New pocketNum is:", backpack.pocketNum);
+
+console.log("Old lid status is:", backpack.lidOpen);
+backpack.toggleLid(true);
+console.log("New lid is:", backpack.lidOpen);
+
+console.log("Old strapLength is:", backpack.strapLength);
+backpack.newStrapLength(78, 80);
+console.log("New lid is:", backpack.strapLength);
+
