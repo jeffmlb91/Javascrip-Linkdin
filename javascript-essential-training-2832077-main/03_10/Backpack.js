@@ -14,7 +14,7 @@ class Backpack {
     pocketNum,
     strapLengthL,
     strapLengthR,
-    lidOpen
+    lidOpen,
   ) {
     // Define properties:
     this.name = name;
@@ -35,6 +35,7 @@ class Backpack {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   }
+
 }
 
 export default Backpack;
