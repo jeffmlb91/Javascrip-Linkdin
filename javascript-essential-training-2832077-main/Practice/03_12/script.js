@@ -15,9 +15,18 @@
 import House from "./House.js";
 
 //console logging the initial house design and changing the type
-const firstBuild = new House("Detached", 5, "modern", true, true);
+const firstBuild = new House(
+  "Detached",
+  5,
+  "modern",
+  true,
+  true,
+  undefined,
+  undefined,
+  "December 5, 2018 15:00:00 PST"
+);
 console.log("first house is our:", firstBuild);
-firstBuild.constructionType('Estate- Detached');
+firstBuild.constructionType("Estate- Detached");
 console.log("House Type changed is:", firstBuild);
 
 //Console logging the change house type as well as the garage upgrade
@@ -28,5 +37,5 @@ firstBuild.changeGarageSpace(7, "massive");
 console.log("first house is our:", firstBuild);
 firstBuild.changeBackyard("has beautiful garden");
 
-
-
+console.log("House acquired on:", firstBuild.dateAcquired);
+console.log("days since acquired:", firstBuild.houseAge())
