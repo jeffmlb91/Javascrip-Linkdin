@@ -11,8 +11,10 @@ const everydayPack = new Backpack(
   15,
   26,
   26,
-  false
+  false,
+  "December 25 2020"
 );
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
+console.log("Date Acquired:", everydayPack.dateAcquired);
