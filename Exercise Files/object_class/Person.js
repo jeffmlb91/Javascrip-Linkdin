@@ -25,6 +25,7 @@ const Person = class {
     this.houseBig = houseBig;
   }
   //Add methods like normal functions:
+  // Method are defined outside the constructor function 
   changeFavouriteFood(newFood) {
     this.favouriteFood = newFood;
   }
