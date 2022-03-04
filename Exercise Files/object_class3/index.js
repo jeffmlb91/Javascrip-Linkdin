@@ -21,10 +21,12 @@ function Backpack(
     small: smallPocketInsideZipper,
   };
   this.lidOpen = lidOpen;
+  // Below function is accessing the this.pocket method
   this.switchZipper = function (currentBig, currentSmall) {
     this.pocket.big = currentBig;
     this.pocket.small = currentSmall;
   };
+  // Below function is accessing the this.lidOpen method
   this.toggleLid = function (newStatus) {
     this.lidOpen = newStatus;
   };
@@ -39,6 +41,13 @@ const brandNewBackPack = new Backpack(
   "Closed",
   false
 );
+// console logging the function object
+console.log("This is the backPack:", brandNewBackPack);
+// Changing lid open state from undefined to true
+brandNewBackPack.toggleLid(true);
+console.log("This is the backPack:", brandNewBackPack)
 
+// console logging the function object
 console.log("This is the backPack:", brandNewBackPack);
-console.log("This is the backPack:", brandNewBackPack);
+// changing the zipper position from close to open and vice versa
+brandNewBackPack.switchZipper("Opened", "Opened");
