@@ -38,3 +38,22 @@ targetNumOfPocket.style.backgroundColor = "tomato";
 // changed first li text content to 80L
 const targetLiSpecText = document.querySelector("li:nth-child(1)");
 targetLiSpecText.textContent = "volume: 80L";
+
+// TARGET CLASSES WITH JAVASCRIPT
+const targetClassParent = document.querySelector('h1').classList;
+console.log(targetClassParent);
+const getClassList = document.querySelector('main li:nth-child(2)').classList;
+console.log('New Value', getClassList);
+
+//TARGET CLASSES THEN ADD A NEW CLASS WITH THE 
+
+
+// Class.add
+
+const addClass = document.querySelector('main h1');
+console.log('This is', addClass)
+addClass.classList.add('first__tag__class');
+addClass.classList.add('this_is_cool');
+//Class.remove
+//Class.replace
+//Class.toggle
