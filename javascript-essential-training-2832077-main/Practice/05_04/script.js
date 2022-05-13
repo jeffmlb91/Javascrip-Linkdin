@@ -48,12 +48,22 @@ console.log('New Value', getClassList);
 //TARGET CLASSES THEN ADD A NEW CLASS WITH THE 
 
 
-// Class.add
+// CLASS.ADD
 
 const addClass = document.querySelector('main h1');
 console.log('This is', addClass)
 addClass.classList.add('first__tag__class');
 addClass.classList.add('this_is_cool');
-//Class.remove
+
+
+//CLASS.REMOVED
+const removeClass = document.querySelector('main article li:nth-child(2)');
+const removeOtherClass = document.querySelector('main li:nth-child(3)')
+console.log("additional", removeOtherClass)
+console.log(removeClass);
+removeClass.classList.remove("feature");
+removeClass.classList.add('brand__new__lisyt')
+removeClass.classList.add("spinach__class")
+
 //Class.replace
 //Class.toggle
