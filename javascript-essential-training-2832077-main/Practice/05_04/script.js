@@ -65,5 +65,11 @@ removeClass.classList.remove("feature");
 removeClass.classList.add('brand__new__lisyt')
 removeClass.classList.add("spinach__class")
 
-//Class.replace
+//CLASS.REPLACE
+
+const replaceClass = document.querySector('main li:nth-child(3)');
+replaceClass.classList.replace('brand__new__lisyt', 'brand__new__list');
+console.log(replaceClass)
+
+
 //Class.toggle
