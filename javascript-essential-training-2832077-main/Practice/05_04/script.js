@@ -75,3 +75,23 @@ replaceClass.classList.replace('backpack__volume', 'backpack__mass')
 //Class.toggle : USED TO DISPLAY OR HIDE
 replaceClass.classList.toggle("backpack__volume");
 replaceClass.classList.toggle("backpack__volume");
+
+
+//checking for all attributes an element contains
+// .attributes
+
+const imageAttribute = document.querySelector('img').attributes;
+console.log(imageAttribute);
+const imageAttributes = document.querySelector('img').hasAttribute('src');
+console.log(imageAttributes); // return a boolean true
+
+
+//checking a specific attribute we want to find inside the element
+//.hasAttributes
+
+//setting or creatring attribute for an elements
+//.createAttribute .setAttribute
+
+
+//removing an existing attribute from the element
+//.removeAttribute
