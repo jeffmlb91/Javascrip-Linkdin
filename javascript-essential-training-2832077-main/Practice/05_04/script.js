@@ -86,16 +86,20 @@ console.log(imageAttribute);
 
 //checking a specific attribute we want to find inside the element
 //.hasAttributes
-const imageAttributes = document.querySelector('img').hasAttribute('src');
-console.log(imageAttributes); // return a boolean true
+const imageHasAttributeSrc = document.querySelector('img').hasAttribute('src');
+console.log(imageHasAttributeSrc); // return a boolean true
 
-const imageAttributess = document.querySelector('img').hasAttribute('alt');
-console.log(imageAttributess);
+const imageHasAttributeAlt = document.querySelector('img').hasAttribute('alt');
+console.log(imageHasAttributeAlt);
 
 
-//setting or creatring attribute for an elements
+//setting or creating attribute for an elements
 //.createAttribute .setAttribute
-
+const imageSetAttribute = document.querySelector("img").setAttribute('class', 'do not add');
+console.log(imageSetAttribute); // attribute listed on .attribute
 
 //removing an existing attribute from the element
 //.removeAttribute
+
+const removeAttribute = document.querySelector('img').removeAttribute('class');
+console.log(removeAttribute); // attribute listed on .attribute
