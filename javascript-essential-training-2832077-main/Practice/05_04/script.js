@@ -67,9 +67,11 @@ removeClass.classList.add("spinach__class")
 
 //CLASS.REPLACE
 
-const replaceClass = document.querySector('main li:nth-child(3)');
-replaceClass.classList.replace('brand__new__lisyt', 'brand__new__list');
-console.log(replaceClass)
+const replaceClass = document.querySelector('main li:nth-child(1)');
+console.log(replaceClass);
+replaceClass.classList.replace('backpack__volume', 'backpack__mass')
 
 
-//Class.toggle
+//Class.toggle : USED TO DISPLAY OR HIDE
+replaceClass.classList.toggle("backpack__volume");
+replaceClass.classList.toggle("backpack__volume");
