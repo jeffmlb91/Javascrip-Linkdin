@@ -82,12 +82,16 @@ replaceClass.classList.toggle("backpack__volume");
 
 const imageAttribute = document.querySelector('img').attributes;
 console.log(imageAttribute);
-const imageAttributes = document.querySelector('img').hasAttribute('src');
-console.log(imageAttributes); // return a boolean true
 
 
 //checking a specific attribute we want to find inside the element
 //.hasAttributes
+const imageAttributes = document.querySelector('img').hasAttribute('src');
+console.log(imageAttributes); // return a boolean true
+
+const imageAttributess = document.querySelector('img').hasAttribute('alt');
+console.log(imageAttributess);
+
 
 //setting or creatring attribute for an elements
 //.createAttribute .setAttribute
