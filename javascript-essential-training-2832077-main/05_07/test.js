@@ -5,8 +5,10 @@ console.log(styleDom);
 // const styleDomFirstTag = document.querySelector(".site-title").style;
 // console.log(styleDomFirstTag)
 
-//change the font color of the header
+// returns black in the console
 const styleDomFirstTag = document.querySelector(".site-title").style.color;
-console.log(styleDomFirstTag); // returns black in the console
+console.log(styleDomFirstTag); 
 
-
+//change the font color of the header
+const styleDomFirstTagColor = document.querySelector(".site-description").style.color = "rebeccapurple";
+console.log(styleDomFirstTagColor);
